@@ -1,0 +1,213 @@
+body{
+    padding: 1cm 0.1cm;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1{
+    color: rgb(232, 244, 1);
+    font-size: 2.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+form{
+    margin: 1.5cm auto 0 auto;
+    text-align: left;
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 50px 30px 20px;
+    background-color: rgba(135, 199, 215, 0.194);
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    min-width: 400px;
+    min-height: 80px;
+}
+
+input, select, button, textarea{
+    max-width: 400px;
+    min-height: 40px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+button{
+    margin: 30px auto ;
+    min-width: 200px;
+    background-color: rgb(174, 214, 31);
+}
+
+input::placeholder, select::placeholder{
+    font-size: 1.1em;
+}
+
+input[type="radio"]{
+    width: 1.1em;
+    margin-bottom: 25px;
+}
+
+input[type="file"]{
+    color: aliceblue;
+    font-size: 1.1em;
+}
+
+.genders label, select, option{
+    cursor: pointer;
+}
+
+label{
+    font-size: 1.2em;
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+fieldset{
+    text-align: left;
+    margin: 40px 50px 25px 50px;
+    background-color: rgba(135, 199, 215, 0.12);
+}
+
+legend{
+    color: rgb(232, 244, 1);
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 7%;
+}
+
+li{
+    color: wheat;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li span{
+    background-color: rgba(214, 41, 41, 0.318);
+    border-radius: 2px;
+    color: rgb(230, 243, 255);
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+@media (max-width: 760px) {
+    body {
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url('job.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    h1{
+        color: rgb(232, 244, 1);
+        font-size: 2.1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+
+    form{
+        margin: 1cm auto 0 auto;
+        text-align: left;
+        width: 65vw;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 50px 30px 20px;
+        background-color: rgba(135, 199, 215, 0.194);
+    }
+
+    input, select, button, textarea{
+        max-width: 65vw;
+        min-height: 40px;
+        border-radius: 5px;
+        font-size: 0.9em;
+    }
+
+    label{
+        font-size: 1em;
+        color: azure;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+
+    textarea{
+        min-width: 55vw;
+        min-height: 80px;
+    }
+
+    buton:active{
+        cursor: grabbing;
+    }
+
+    button{
+        cursor: grab;
+        margin: 20px auto ;
+        min-width: 125px;
+        background-color: rgb(174, 214, 31);
+    }
+
+    input[type="radio"]{
+        width: 1em;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    fieldset{
+        text-align: left;
+        margin: 20px 25px 13px 25px;
+        background-color: rgba(135, 199, 215, 0.12);
+    }
+
+    legend{
+        color: rgb(232, 244, 1);
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        margin-left: 4%;
+    }
+
+    li{
+        font-size: 0.6em;
+        color: wheat;
+        font-weight: 400;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    li span{
+        background-color: rgba(214, 41, 41, 0.318);
+        border-radius: 2px;
+        color: rgb(230, 243, 255);
+        font-size: 1.1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+}
+}

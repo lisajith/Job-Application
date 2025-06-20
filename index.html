@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Work Application</title>
+</head>
+<body>
+    <h1>Job / Work Application</h1>
+
+    <form action="https://getform.io/f/amdmgzxb" method="POST">
+
+        <div class="name details">
+            <label for="Name">Name <span style="color: red; font-size: 0.9em;">*</span></label>
+            <input type="text" id="Name" name="Name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="age details">
+            <label for="Age">Age <span style="color: red; font-size: 0.9em;">*</span></label>
+            <input type="number" name="Age" id="Age" placeholder="Enter your Age" max="99" required>
+        </div>
+
+        <div class="gender details">
+            <label for="Gender">Gender <span style="color: red; font-size: 0.9em;">*</span></label>
+            <div class="genders">
+                <label for="Male">
+                    <input type="radio" name="Gender" id="Male" value="Male" required>
+                    Male
+                </label>
+                <label for="Female">
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    Female
+                </label>
+                <label for="Prefernottosay">
+                    <input type="radio" name="Gender" id="Prefernottosay" value="Prefernottosay">
+                    Prefer not to say
+                </label>
+            </div>
+        </div>
+
+        <div class="phone details">
+            <label for="Phone">Mobile Number <span style="color: red; font-size: 0.9em;">*</span></label>
+            <input type="tel" name="Phone" id="Phone" placeholder="Enter your Mobile Number" maxlength="10" required>
+        </div>
+
+        <div class="alternatephone details">
+            <label for="Alternate Phone">Alternate Mobile Number <span style="color: rgb(223, 197, 197); font-size: 0.9em;"><i>optional</i></span></label>
+            <input type="tel" name="AlternatePhone" id="AlternatePhone" placeholder="Alternate Mobile Number" maxlength="10" required>
+        </div>
+
+        <div class="state details">
+            <label for="State">State <span style="color: red; font-size: 0.9em;">*</span></label>
+            <select name="State" id="State" required>
+                <option value="" disabled selected>---Select State---</option>
+                <option value="Andhrapradesh">AndhraPradesh</option>
+                <option value="Telengana">Telengana</option>
+            </select>
+        </div>
+
+        <div class="place details">
+            <label for="Place">City/Town/District <span style="color: red; font-size: 0.9em;">*</span></label>
+            <input type="text" name="Place" id="Place" placeholder="Enter your place" required>
+        </div>
+
+        <div class="qualification details">
+            <label for="Qualification">Education Qualification <span style="color: red; font-size: 0.9em;">*</span></label>
+            <select name="Qualification" id="Qualification" required>
+                <option value="" disabled selected>---Select an Option---</option>
+                <option value="Tenth">10th</option>
+                <option value="Intermediate1">Intermediate 1st Year</option>
+                <option value="Intermediate2">Intermediate 2st Year</option>
+                <option value="Diploma1">Diploma 1st Year</option>
+                <option value="Diploma2">Diploma 2nd Year</option>
+                <option value="Diploma3">Diploma 3rd Year</option>
+                <option value="Degree1">Degree 1st Year</option>
+                <option value="Degree2">Degree 2nd Year</option>
+                <option value="Degree3">Degree 3rd Year</option>
+                <option value="Btech1">B.Tech 1st Year</option>
+                <option value="Btech2">B.Tech 2nd Year</option>
+                <option value="Btech3">B.Tech 3rd Year</option>
+                <option value="Btech4">B.Tech 4th Year</option>
+            </select>
+        </div>
+
+        <div class="school details">
+            <label for="School">School/College <span style="color: red; font-size: 0.9em;">*</span></label>
+            <input type="text" name="School" id="School" placeholder="School/College Name">
+        </div>
+
+        <div class="resume details">
+            <label for="Resume">Resume</label>
+            <input type="file" name="Resume" id="Resume">
+        </div>
+
+        <div class="email details">
+            <label for="Email">Email <span style="color: rgb(223, 197, 197); font-size: 0.9em;"><i>optional</i></span></label>
+            <input type="Email" name="Email" id="Email" placeholder="Enter your Email">
+        </div>
+
+        <div class="experince details">
+            <label for="Work">Work Experince</label>
+            <textarea type="text" name="Work" id="Work" placeholder="Your Work Experince"></textarea>
+        </div>
+
+        <div class="submit details">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div class="contact">
+        <fieldset>
+            <legend>Details</legend>
+            <li>Qualification must be <span id="num">10th</span> or more than <span id="num">10th</span> standard</li>
+            <li>Age must be <span id="num">18+</span></li>
+            <li>Anyone from <span id="num">AndhraPradesh</span> & <span id="num">Telengana</span> can apply</li>
+            <li>You will receive a call within a <span id="num">24hrs</span> once you <span id="num">Submit</span> the form</li>
+            <li>For an queries contact <span id="num">6303088378</span></li>
+        </fieldset>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
